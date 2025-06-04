@@ -30,7 +30,7 @@
 
 [Cloudflare](https://blog.cloudflare.com/1-1-1-1-lookup-failures-on-october-4th-2023/). On 4 October 2023, Cloudflare experienced DNS resolution problems starting at 07:00 UTC and ending at 11:00 UTC. Some users of 1.1.1.1 or products like WARP, Zero Trust, or third party DNS resolvers which use 1.1.1.1 may have received SERVFAIL DNS responses to valid queries. We’re very sorry for this outage. This outage was an internal software error and not the result of an attack. In this blog, we’re going to talk about what the failure was, why it occurred, and what we’re doing to make sure this doesn’t happen again.
 
-[DataDog](https://www.datadoghq.com/blog/2020-09-25-infrastructure-connectivity-issue/). A bad service discovery config in one of the clients brought down service discovery globally when a dependent client went down.
+[DataDog](https://web.archive.org/web/20240814160946/https://www.datadoghq.com/blog/2020-09-25-infrastructure-connectivity-issue/). A bad service discovery config in one of the clients brought down service discovery globally when a dependent client went down.
 
 [Enom](https://enomstatus.com/incidents/03q064h6rb7x). On January 15, 2022, at 9:00 AM ET, Tucows’ engineering team began planned maintenance work to migrate the Enom platform to a new cloud infrastructure. Due to the complexity of the cutover, the team encountered many issues resulting in continuous delays. The maintenance window was extended multiple times to address issues related to data replication, network routing, and DNS resolution issues impacting website accessibility and email delivery.
 
@@ -256,7 +256,7 @@
 
 [Gitlab](https://docs.google.com/document/d/1ScqXAdb6BjhsDzCo3qdPYbt1uULzgZqPO8zHeHHarS0/preview?sle=true&hl=en&forcehl=1#heading=h.dfbilqgnc5sf). After the primary locked up and was restarted, it was brought back up with the wrong filesystem, causing a global outage. See also [HN discussion](https://web.archive.org/web/20220127094354/https://news.ycombinator.com/item?id=8003601).
 
-[Gitlab](https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/). Influx of requests overloaded the database, caused replication to lag, tired admin deleted the wrong directory, six hours of data lost. See also [earlier report](https://about.gitlab.com/2017/02/01/gitlab-dot-com-database-incident) and [HN discussion](https://news.ycombinator.com/item?id=13537052).
+[Gitlab](https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/). Influx of requests overloaded the database, caused replication to lag, tired admin deleted the wrong directory, six hours of data lost. See also [earlier report](https://about.gitlab.com/2017/02/01/gitlab-dot-com-database-incident) and [HN discussion](https://web.archive.org/web/20240918153505/https://news.ycombinator.com/item?id=13537052).
 
 [Google](https://gist.github.com/jomo/2bae3821acb433d0446d). A mail system emailed people more than 20 times. This happened because mail was sent with a batch cron job that sent mail to everyone who was marked as waiting for mail. This was a non-atomic operation and the batch job didn't mark people as not waiting until all messages were sent.
 
